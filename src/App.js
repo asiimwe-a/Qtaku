@@ -9,8 +9,12 @@ function App() {
   };
 
   return (
-    <div>
-      <CreatePrompt onCreate={createBook} />
+    <div className="dashboard-container">
+      <div className="pane-1">{/* Add input for generating images here */}</div>
+      <div className="pane-2">
+        <ImageGenerator />
+      </div>
+      <div className="pane-3">{/* Add prompt history component here */}</div>
     </div>
   );
 }
